@@ -1,0 +1,50 @@
+
+/* Slide */
+.page-wrapper .slider .content h2 {
+    font-size: 50px !important;
+}
+
+/* Categories */
+.page-wrapper .categories .items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+} 
+.page-wrapper .categories .items .item {
+    padding: 40px 20px;
+}
+.page-wrapper .categories .items .item:nth-child(1),
+.page-wrapper .categories .items .item:nth-child(3) {
+    background-color: #f6f3fc;
+}
+.page-wrapper .categories .items .item:nth-child(2) {
+    background-color: #fcfaff;
+}
+.page-wrapper .categories .items .item h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* All Category */
+.page-wrapper .new-arrivals .tab-items .item > a > img {
+    max-height: 260px;
+    line-height: 260px;
+    max-width: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+.page-wrapper .new-arrivals .tab-items .item .content {
+    padding: 40px 20px;
+}
+
+
+/* font-family: "Font Awesome 6 Free";
+font-weight: 900;
+content: "/f005";
+font-style: normal;
+font-variant: normal;
+line-height: 1;
+text-rendering: auto; */
