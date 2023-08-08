@@ -234,7 +234,6 @@ footer .widgets .widget .social ul li a.youtube {
 
 
 
-
 /* 
 class-name::before {
     font-family: "Font Awesome 6 Free";
@@ -242,3 +241,37 @@ class-name::before {
     content: "\f005";
 }
 */
+
+
+
+
+
+/* ====================================== */
+/* Responsive */
+@media only screen and (max-width: 991px) {
+    
+}
+
+@media only screen and (max-width: 767px) {
+    footer .widgets {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        row-gap: 24px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    /* Category / Serveice */
+    .page-wrapper .cat-service .items.grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    
+    /* Footer */
+    footer .widgets {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+}
