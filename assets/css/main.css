@@ -260,11 +260,6 @@ class-name::before {
 }
 
 @media only screen and (max-width: 575px) {
-    /* Category / Serveice */
-    .page-wrapper .cat-service .items.grid {
-        grid-template-columns: 1fr !important;
-    }
-
     
     /* Footer */
     footer .widgets {
