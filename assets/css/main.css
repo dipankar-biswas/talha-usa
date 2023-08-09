@@ -61,6 +61,9 @@ a {
     display: table !important;
     margin: auto;
 }
+header .dt-none {
+    display: none;
+}
 
 /* ============================ */
 /* Top Navbar Css */
@@ -76,6 +79,10 @@ header .logo-bar {
 }
 header .navigation {
     height: 70px;
+}
+header .navigation .navbar .navbar-brand,
+header .navigation .navbar .navbar-toggler {
+    display: none;
 }
 header .navigation nav .navbar-nav {
     font-size: 15px !important;
@@ -249,10 +256,63 @@ class-name::before {
 /* ====================================== */
 /* Responsive */
 @media only screen and (max-width: 991px) {
-    
+    /* Top Navbar */
+    .top-navbar {
+        height: 40px;
+    }
+    /* Header */
+    header  {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    header .ph-none {
+        display: none;
+    }
+    header .dt-none {
+        display: block;
+    }
+    header .logo-bar {
+        height: 60px;
+        background-color: #fff;
+    }
+    header .logo-bar .categories .dropdown > a {
+        font-size: 16px !important;
+    }
+    header .navigation {
+        background-color: #f7f5fb;
+    }
+    header .navigation .categories {
+        display: none;
+    }
+    header .navigation .navbar .container-fluid {
+        padding: 0;
+    }
+    header .navigation .navbar .navbar-brand,
+    header .navigation .navbar .navbar-toggler {
+        display: block;
+    }
+    header .navigation .navbar .navbar-brand {
+        padding: 8px 0;
+    }
+    header .navigation .navbar .navbar-brand img {
+        height: 40px;
+    }
+    header .navigation .navbar .navbar-collapse {
+        margin-top: 6px;
+    }
+    header .navigation .navbar .navbar-collapse .navbar-nav {
+        text-align: center;
+    }
+
+    /* Footer */
+    footer .widgets {
+        grid-template-columns: repeat(3, minmax(120px, 1fr));
+        row-gap: 24px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
+    /* Footer */
     footer .widgets {
         grid-template-columns: repeat(2, minmax(120px, 1fr));
         row-gap: 24px;
@@ -260,7 +320,22 @@ class-name::before {
 }
 
 @media only screen and (max-width: 575px) {
-    
+    /* Top Navbar */
+    .top-navbar {
+        height: 48px;
+        padding: 6px 0;
+    }
+    .top-navbar ul {
+        font-size: 12px;
+    }
+    /* Header */
+    header .navigation .navbar .navbar-brand {
+        padding: 12px 0;
+    }
+    header .navigation .navbar .navbar-brand img {
+        height: 32px;
+    }
+
     /* Footer */
     footer .widgets {
         grid-template-columns: 1fr !important;

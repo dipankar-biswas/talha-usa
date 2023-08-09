@@ -62,12 +62,28 @@
             <div class="logo-bar">
                 <div class="container h-100">
                     <div class="row h-100">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-4 col-sm-5 col-6 dt-none">
+                            <div class="categories h-100 w-100">
+                                <div class="dropdown d-flex justify-content-start align-items-center h-100">
+                                    <a class="btn btn-secondary custom-btn border-0 px-4 py-2 w-100 d-flex align-items-center column-gap-3 fs-4 border-0"
+                                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-bars"></i> <span>All Categories</span>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 ph-none">
                             <div class="logo d-flex justify-content-start justify-content-sm-center align-items-center h-100">
                                 <img src="assets/images/Talha Usa Logo.png" alt="Logo">
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 ph-none">
                             <div class="d-flex justify-content-center align-items-center h-100 column-gap-3">
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-text px-0" id="inputGroup-sizing-lg">
@@ -93,8 +109,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="d-flex justify-content-end justify-content-sm-center align-items-center h-100 column-gap-4">
+                        <div class="col-lg-3 col-md-8 col-sm-7 col-6">
+                            <div class="d-flex justify-content-end align-items-center h-100 column-gap-4">
+                                <div class="search dt-none">
+                                    <a href="#" class="text-light-emphasis fs-4">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </div>
                                 <div class="compare">
                                     <a href="#" class="text-light-emphasis fs-4">
                                         <i class="fa-solid fa-code-compare"></i>
@@ -220,17 +241,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-9">
+                        <div class="col-lg-9 col-md-12">
                             <nav class="navbar navbar-expand-lg d-flex justify-content-start align-items-center h-100">
                                 <div class="container-fluid">
-                                    <!-- <a class="navbar-brand" href="#">Navbar</a>
+                                    <a class="navbar-brand" href="#">
+                                        <div class="logo d-flex justify-content-start justify-content-sm-center align-items-center h-100">
+                                            <img src="assets/images/Talha Usa Logo.png" alt="Logo">
+                                        </div>
+                                    </a>
                                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                         aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="navbar-toggler-icon"></span>
-                                    </button> -->
+                                    </button>
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                        <ul class="navbar-nav nav ms-auto mb-2 mb-lg-0 fs-5">
+                                        <ul class="navbar-nav nav bg-white ms-auto mb-lg-0 fs-5">
                                             <li class="nav-item">
                                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                                             </li>
@@ -262,51 +287,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Mobile Navigation -->
-            <div class="mobile-navigation d-none">
-                <nav class="navbar navbar-expand-lg d-flex justify-content-start align-items-center h-100">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                            <div class="logo d-flex justify-content-start justify-content-sm-center align-items-center h-100">
-                                <img src="assets/images/Talha Usa Logo.png" alt="Logo">
-                            </div>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContentMobile" aria-controls="navbarSupportedContentMobile"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContentMobile">
-                            <ul class="navbar-nav nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Men</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Women</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Kids</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Sign In/ Sign Out</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
             </div>
         </header>
         <!-- Header Code End -->
@@ -3516,42 +3496,42 @@
                     </div>
                     <div class="items grid">
                         <div class="row">
-                            <div class="col-lg-4 py-3">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 py-3">
                                 <div class="item text-center border px-3 py-5" style="background-image: url(assets/images/ads/ads-half-one.jpg);">
                                     <p class="text-white-50">New Products</p>
                                     <h4 class="text-bold text-white">MEN’S FASHION TRENDS 2023</h4>
                                     <a href="#" class="custom-btn px-4 py-2 mt-3 d-inline-block">Shop Now</a>
                                 </div>
                             </div>
-                            <div class="col-lg-4 py-3">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 py-3">
                                 <div class="item text-center border px-3 py-5" style="background-image: url(assets/images/ads/ads-half-two.jpg);">
                                     <p class="text-white-50">New Products</p>
                                     <h4 class="text-bold text-white">Men’s Round Neck Long Sleeve T-Shirt</h4>
                                     <a href="#" class="custom-btn px-4 py-2 mt-3 d-inline-block">Shop Now</a>
                                 </div>
                             </div>
-                            <div class="col-lg-4 py-3">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 py-3">
                                 <div class="item text-center border px-3 py-5" style="background-image: url(assets/images/ads/ads-half-one.jpg);">
                                     <p class="text-white-50">New Products</p>
                                     <h4 class="text-bold text-white">Men’s V Neck T-Shirt</h4>
                                     <a href="#" class="custom-btn px-4 py-2 mt-3 d-inline-block">Shop Now</a>
                                 </div>
                             </div>
-                            <div class="col-lg-4 py-3">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 py-3">
                                 <div class="item text-center border px-3 py-5" style="background-image: url(assets/images/ads/ads-half-two.jpg);">
                                     <p class="text-white-50">New Products</p>
                                     <h4 class="text-bold text-white">Men's Hoodie</h4>
                                     <a href="#" class="custom-btn px-4 py-2 mt-3 d-inline-block">Shop Now</a>
                                 </div>
                             </div>
-                            <div class="col-lg-4 py-3">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 py-3">
                                 <div class="item text-center border px-3 py-5" style="background-image: url(assets/images/ads/ads-half-one.jpg);">
                                     <p class="text-white-50">New Products</p>
                                     <h4 class="text-bold text-white">Women's Tank Tops</h4>
                                     <a href="#" class="custom-btn px-4 py-2 mt-3 d-inline-block">Shop Now</a>
                                 </div>
                             </div>
-                            <div class="col-lg-4 py-3">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 py-3">
                                 <div class="item text-center border px-3 py-5" style="background-image: url(assets/images/ads/ads-half-two.jpg);">
                                     <p class="text-white-50">New Products</p>
                                     <h4 class="text-bold text-white">Kid's T-Shirt</h4>
@@ -5138,7 +5118,7 @@
                 <div class="container">
                     <div class="items">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="item text-center">
                                     <div class="icon">
                                         <i class="fa-solid fa-truck-fast"></i>
@@ -5149,7 +5129,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="item text-center">
                                     <div class="icon">
                                         <i class="fa-solid fa-right-left"></i>
@@ -5160,7 +5140,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="item text-center">
                                     <div class="icon">
                                         <i class="fa-regular fa-credit-card"></i>
