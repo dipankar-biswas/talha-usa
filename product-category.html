@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/plugin/price-range.css">
 </head>
 
 <body>
@@ -80,7 +81,7 @@
                         </div>
                         <div class="col-lg-3 ph-none">
                             <div class="logo d-flex justify-content-start justify-content-sm-center align-items-center h-100">
-                                <img src="assets/images/Talha Usa Logo.png" alt="Logo">
+                                <a href="index.html"><img src="assets/images/Talha Usa Logo.png" alt="Logo"></a>
                             </div>
                         </div>
                         <div class="col-lg-6 ph-none">
@@ -244,7 +245,7 @@
                         <div class="col-lg-9 col-md-12">
                             <nav class="navbar navbar-expand-lg d-flex justify-content-start align-items-center h-100">
                                 <div class="container-fluid">
-                                    <a class="navbar-brand" href="#">
+                                    <a class="navbar-brand" href="index.html">
                                         <div class="logo d-flex justify-content-start justify-content-sm-center align-items-center h-100">
                                             <img src="assets/images/Talha Usa Logo.png" alt="Logo">
                                         </div>
@@ -269,6 +270,9 @@
                                                 <a class="nav-link" href="#">Kids</a>
                                             </li>
                                             <li class="nav-item">
+                                                <a class="nav-link" href="#">Others</a>
+                                            </li>
+                                            <li class="nav-item">
                                                 <a class="nav-link" href="#">About</a>
                                             </li>
                                             <li class="nav-item">
@@ -276,9 +280,6 @@
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" href="#">Contact</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Others</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" href="#">Sign In/ Sign Out</a>
@@ -301,383 +302,838 @@
                 <div class="container">
                     <div class="cat-products">
                         <div class="row">
-                            <div class="col-lg-3"></div>
+                            <div class="col-lg-3">
+                                <div class="left-section">
+                                    <div class="price-range mb-3">
+                                        <div class="heading text-secondary fs-5 fw-bold border-bottom pb-2 mb-4">Price Range</div>
+                                        <div class="price-input">
+                                            <div class="field">
+                                                <span>Min</span>
+                                                <input type="number" class="input-min" value="2500">
+                                            </div>
+                                            <div class="separator">-</div>
+                                            <div class="field">
+                                                <span>Max</span>
+                                                <input type="number" class="input-max" value="7500">
+                                            </div>
+                                        </div>
+
+                                        <div class="slider">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <div class="range-input">
+                                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                        </div>
+                                    </div>
+                                    <div class="cat-lists mt-5">
+                                        <div class="heading text-secondary fs-5 fw-bold border-bottom pb-2 mb-3">Category</div>
+                                        <a href="#" class="title text-body fs-5 text-hover">Men</a>
+                                        <ul class="lists px-4">
+                                            <li class="list"><a href="#" class="link text-reset text-hover">Men's T-Shirts</a></li>
+                                            <li class="list"><a href="#" class="link text-reset text-hover">Men's Socks</a></li>
+                                            <li class="list"><a href="#" class="link text-reset text-hover">Trunks & Boxers</a></li>
+                                            <li class="list"><a href="#" class="link text-reset text-hover">Polo Shirts</a></li>
+                                            <li class="list"><a href="#" class="link text-reset text-hover">Casual Shirts</a></li>
+                                            <li class="list"><a href="#" class="link text-reset text-hover">Lungi</a></li>
+                                            <li class="list"><a href="#" class="link text-reset text-hover">Kurtas</a></li>
+                                            <li class="list"><a href="#" class="link text-reset text-hover">Chino</a></li>
+                                            <li class="list"><a href="#" class="link text-reset text-hover">Joggers & Sweats</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-lg-9">
-                                <div class="products">
-                                    <div class="row">
-                                        <div class="col-lg-3 col-6 my-3">
-                                            <div class="item small rounded-1 shadow">
-                                                <a href="#">
-                                                    <img src="assets/images/products/16ee943679ec60dca64f376ec3e56989.jpg" alt="Product Image">
-                                                </a>
-                                                <div class="content">
-                                                    <div class="price-rating d-flex justify-content-between">
-                                                        <div class="price d-flex align-items-end justify-content-center column-gap-2">
-                                                            <span class="new fw-bold fs-3">$85.00</span>
-                                                            <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <div class="star down">
-                                                                <div class="star up" style="width: 90%;"></div>
+                                <div class="right-section">
+                                    <div class="cat-crumb bg-light mb-2 py-2 px-4">
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb mb-0">
+                                              <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                              <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                              <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                            </ol>
+                                          </nav>
+                                    </div>
+                                    <div class="heading d-flex justify-content-between align-items-center column-gap-3">
+                                        <div class="cat-name fs-5 text-body">Men Shirt's</div>
+                                        <div class="sorting d-flex align-items-center column-gap-3">
+                                            <div class="form-group">
+                                                <label for="">Sort By</label>
+                                                <select class="form-select form-select-sm" aria-label="Small select example">
+                                                    <option selected>Choose Brand</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Brands</label>
+                                                <select class="form-select form-select-sm" aria-label="Small select example">
+                                                    <option value="1">Newest</option>
+                                                    <option value="2">Oldest</option>
+                                                    <option value="3">Price Low to High</option>
+                                                    <option value="3">Price High to Low</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="products">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/16ee943679ec60dca64f376ec3e56989.jpg" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <h2 class="title fs-5 mt-3 mb-4 text-center">
-                                                        <a href="#" class="text-body text-hover">Woman Lasn</a>
-                                                    </h2>
-                                                    <div class="actions d-flex justify-content-center align-items-center column-gap-4">
-                                                        <div class="view action bg-white border rounded-circle shadow" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
                                                         </div>
-                                                        <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
-                                                            <i class="fa-regular fa-heart"></i>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
-                                                            <i class="fa-solid fa-cart-shopping"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="stock-color d-flex justify-content-between align-items-center mt-4">
-                                                        <div class="stocks">
-                                                            <span class="stock in text-success fw-bold">Stock-In</span>
-                                                            <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
-                                                        </div>
-                                                        <ul class="colors">
-                                                            <li class="color" title="Red" style="background-color: red;"></li>
-                                                            <li class="color" title="Blue" style="background-color: blue;"></li>
-                                                            <li class="color" title="Black" style="background-color: black;"></li>
-                                                            <li class="color" title="Gray" style="background-color: gray;"></li>
-                                                            <li class="color" title="Green" style="background-color: green;"></li>
-                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-3 col-6 my-3">
-                                            <div class="item small rounded-1 shadow">
-                                                <a href="#">
-                                                    <img src="assets/images/products/1eaea3b9d8871cef85630f71acd6a61f.jpg" alt="Product Image">
-                                                </a>
-                                                <div class="content">
-                                                    <div class="price-rating d-flex justify-content-between">
-                                                        <div class="price d-flex align-items-end justify-content-center column-gap-2">
-                                                            <span class="new fw-bold fs-3">$85.00</span>
-                                                            <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <div class="star down">
-                                                                <div class="star up" style="width: 90%;"></div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/1eaea3b9d8871cef85630f71acd6a61f.jpg" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <h2 class="title fs-5 mt-3 mb-4 text-center">
-                                                        <a href="#" class="text-body text-hover">Woman Lasn</a>
-                                                    </h2>
-                                                    <div class="actions d-flex justify-content-center align-items-center column-gap-4">
-                                                        <div class="view action bg-white border rounded-circle shadow" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
                                                         </div>
-                                                        <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
-                                                            <i class="fa-regular fa-heart"></i>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
-                                                            <i class="fa-solid fa-cart-shopping"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="stock-color d-flex justify-content-between align-items-center mt-4">
-                                                        <div class="stocks">
-                                                            <span class="stock in text-success fw-bold">Stock-In</span>
-                                                            <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
-                                                        </div>
-                                                        <ul class="colors">
-                                                            <li class="color" title="Red" style="background-color: red;"></li>
-                                                            <li class="color" title="Blue" style="background-color: blue;"></li>
-                                                            <li class="color" title="Black" style="background-color: black;"></li>
-                                                            <li class="color" title="Gray" style="background-color: gray;"></li>
-                                                            <li class="color" title="Green" style="background-color: green;"></li>
-                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-3 col-6 my-3">
-                                            <div class="item small rounded-1 shadow">
-                                                <a href="#">
-                                                    <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (1).webp" alt="Product Image">
-                                                </a>
-                                                <div class="content">
-                                                    <div class="price-rating d-flex justify-content-between">
-                                                        <div class="price d-flex align-items-end justify-content-center column-gap-2">
-                                                            <span class="new fw-bold fs-3">$85.00</span>
-                                                            <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <div class="star down">
-                                                                <div class="star up" style="width: 90%;"></div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (1).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <h2 class="title fs-5 mt-3 mb-4 text-center">
-                                                        <a href="#" class="text-body text-hover">Woman Lasn</a>
-                                                    </h2>
-                                                    <div class="actions d-flex justify-content-center align-items-center column-gap-4">
-                                                        <div class="view action bg-white border rounded-circle shadow" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
                                                         </div>
-                                                        <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
-                                                            <i class="fa-regular fa-heart"></i>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
-                                                            <i class="fa-solid fa-cart-shopping"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="stock-color d-flex justify-content-between align-items-center mt-4">
-                                                        <div class="stocks">
-                                                            <span class="stock in text-success fw-bold">Stock-In</span>
-                                                            <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
-                                                        </div>
-                                                        <ul class="colors">
-                                                            <li class="color" title="Red" style="background-color: red;"></li>
-                                                            <li class="color" title="Blue" style="background-color: blue;"></li>
-                                                            <li class="color" title="Black" style="background-color: black;"></li>
-                                                            <li class="color" title="Gray" style="background-color: gray;"></li>
-                                                            <li class="color" title="Green" style="background-color: green;"></li>
-                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-3 col-6 my-3">
-                                            <div class="item small rounded-1 shadow">
-                                                <a href="#">
-                                                    <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (2).webp" alt="Product Image">
-                                                </a>
-                                                <div class="content">
-                                                    <div class="price-rating d-flex justify-content-between">
-                                                        <div class="price d-flex align-items-end justify-content-center column-gap-2">
-                                                            <span class="new fw-bold fs-3">$85.00</span>
-                                                            <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <div class="star down">
-                                                                <div class="star up" style="width: 90%;"></div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (2).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <h2 class="title fs-5 mt-3 mb-4 text-center">
-                                                        <a href="#" class="text-body text-hover">Woman Lasn</a>
-                                                    </h2>
-                                                    <div class="actions d-flex justify-content-center align-items-center column-gap-4">
-                                                        <div class="view action bg-white border rounded-circle shadow" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
                                                         </div>
-                                                        <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
-                                                            <i class="fa-regular fa-heart"></i>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
-                                                            <i class="fa-solid fa-cart-shopping"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="stock-color d-flex justify-content-between align-items-center mt-4">
-                                                        <div class="stocks">
-                                                            <span class="stock in text-success fw-bold">Stock-In</span>
-                                                            <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
-                                                        </div>
-                                                        <ul class="colors">
-                                                            <li class="color" title="Red" style="background-color: red;"></li>
-                                                            <li class="color" title="Blue" style="background-color: blue;"></li>
-                                                            <li class="color" title="Black" style="background-color: black;"></li>
-                                                            <li class="color" title="Gray" style="background-color: gray;"></li>
-                                                            <li class="color" title="Green" style="background-color: green;"></li>
-                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-3 col-6 my-3">
-                                            <div class="item small rounded-1 shadow">
-                                                <a href="#">
-                                                    <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (3).webp" alt="Product Image">
-                                                </a>
-                                                <div class="content">
-                                                    <div class="price-rating d-flex justify-content-between">
-                                                        <div class="price d-flex align-items-end justify-content-center column-gap-2">
-                                                            <span class="new fw-bold fs-3">$85.00</span>
-                                                            <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <div class="star down">
-                                                                <div class="star up" style="width: 90%;"></div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (3).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <h2 class="title fs-5 mt-3 mb-4 text-center">
-                                                        <a href="#" class="text-body text-hover">Woman Lasn</a>
-                                                    </h2>
-                                                    <div class="actions d-flex justify-content-center align-items-center column-gap-4">
-                                                        <div class="view action bg-white border rounded-circle shadow" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
                                                         </div>
-                                                        <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
-                                                            <i class="fa-regular fa-heart"></i>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
-                                                            <i class="fa-solid fa-cart-shopping"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="stock-color d-flex justify-content-between align-items-center mt-4">
-                                                        <div class="stocks">
-                                                            <span class="stock in text-success fw-bold">Stock-In</span>
-                                                            <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
-                                                        </div>
-                                                        <ul class="colors">
-                                                            <li class="color" title="Red" style="background-color: red;"></li>
-                                                            <li class="color" title="Blue" style="background-color: blue;"></li>
-                                                            <li class="color" title="Black" style="background-color: black;"></li>
-                                                            <li class="color" title="Gray" style="background-color: gray;"></li>
-                                                            <li class="color" title="Green" style="background-color: green;"></li>
-                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-3 col-6 my-3">
-                                            <div class="item small rounded-1 shadow">
-                                                <a href="#">
-                                                    <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (4).webp" alt="Product Image">
-                                                </a>
-                                                <div class="content">
-                                                    <div class="price-rating d-flex justify-content-between">
-                                                        <div class="price d-flex align-items-end justify-content-center column-gap-2">
-                                                            <span class="new fw-bold fs-3">$85.00</span>
-                                                            <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <div class="star down">
-                                                                <div class="star up" style="width: 90%;"></div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (4).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <h2 class="title fs-5 mt-3 mb-4 text-center">
-                                                        <a href="#" class="text-body text-hover">Woman Lasn</a>
-                                                    </h2>
-                                                    <div class="actions d-flex justify-content-center align-items-center column-gap-4">
-                                                        <div class="view action bg-white border rounded-circle shadow" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
                                                         </div>
-                                                        <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
-                                                            <i class="fa-regular fa-heart"></i>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
-                                                            <i class="fa-solid fa-cart-shopping"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="stock-color d-flex justify-content-between align-items-center mt-4">
-                                                        <div class="stocks">
-                                                            <span class="stock in text-success fw-bold">Stock-In</span>
-                                                            <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
-                                                        </div>
-                                                        <ul class="colors">
-                                                            <li class="color" title="Red" style="background-color: red;"></li>
-                                                            <li class="color" title="Blue" style="background-color: blue;"></li>
-                                                            <li class="color" title="Black" style="background-color: black;"></li>
-                                                            <li class="color" title="Gray" style="background-color: gray;"></li>
-                                                            <li class="color" title="Green" style="background-color: green;"></li>
-                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-3 col-6 my-3">
-                                            <div class="item small rounded-1 shadow">
-                                                <a href="#">
-                                                    <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (5).webp" alt="Product Image">
-                                                </a>
-                                                <div class="content">
-                                                    <div class="price-rating d-flex justify-content-between">
-                                                        <div class="price d-flex align-items-end justify-content-center column-gap-2">
-                                                            <span class="new fw-bold fs-3">$85.00</span>
-                                                            <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <div class="star down">
-                                                                <div class="star up" style="width: 90%;"></div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (5).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <h2 class="title fs-5 mt-3 mb-4 text-center">
-                                                        <a href="#" class="text-body text-hover">Woman Lasn</a>
-                                                    </h2>
-                                                    <div class="actions d-flex justify-content-center align-items-center column-gap-4">
-                                                        <div class="view action bg-white border rounded-circle shadow" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
                                                         </div>
-                                                        <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
-                                                            <i class="fa-regular fa-heart"></i>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
-                                                            <i class="fa-solid fa-cart-shopping"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="stock-color d-flex justify-content-between align-items-center mt-4">
-                                                        <div class="stocks">
-                                                            <span class="stock in text-success fw-bold">Stock-In</span>
-                                                            <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
-                                                        </div>
-                                                        <ul class="colors">
-                                                            <li class="color" title="Red" style="background-color: red;"></li>
-                                                            <li class="color" title="Blue" style="background-color: blue;"></li>
-                                                            <li class="color" title="Black" style="background-color: black;"></li>
-                                                            <li class="color" title="Gray" style="background-color: gray;"></li>
-                                                            <li class="color" title="Green" style="background-color: green;"></li>
-                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-3 col-6 my-3">
-                                            <div class="item small rounded-1 shadow">
-                                                <a href="#">
-                                                    <img src="assets/images/products/3-5mm-Jack-Male-to-2-RCA-Female-Jack-RCA-Stereo-Audio-Cable-Converter-Adapter-High.jpg_ (1).webp" alt="Product Image">
-                                                </a>
-                                                <div class="content">
-                                                    <div class="price-rating d-flex justify-content-between">
-                                                        <div class="price d-flex align-items-end justify-content-center column-gap-2">
-                                                            <span class="new fw-bold fs-3">$85.00</span>
-                                                            <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
-                                                        </div>
-                                                        <div class="rating">
-                                                            <div class="star down">
-                                                                <div class="star up" style="width: 90%;"></div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="product-details.html">
+                                                        <img src="assets/images/products/16ee943679ec60dca64f376ec3e56989.jpg" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="product-details.html" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <h2 class="title fs-5 mt-3 mb-4 text-center">
-                                                        <a href="#" class="text-body text-hover">Woman Lasn</a>
-                                                    </h2>
-                                                    <div class="actions d-flex justify-content-center align-items-center column-gap-4">
-                                                        <div class="view action bg-white border rounded-circle shadow" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/3-5mm-Jack-Male-to-2-RCA-Female-Jack-RCA-Stereo-Audio-Cable-Converter-Adapter-High.jpg_ (1).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
-                                                            <i class="fa-regular fa-heart"></i>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
                                                         </div>
-                                                        <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
-                                                            <i class="fa-solid fa-cart-shopping"></i>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="stock-color d-flex justify-content-between align-items-center mt-4">
-                                                        <div class="stocks">
-                                                            <span class="stock in text-success fw-bold">Stock-In</span>
-                                                            <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="product-details.html">
+                                                        <img src="assets/images/products/1eaea3b9d8871cef85630f71acd6a61f.jpg" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <ul class="colors">
-                                                            <li class="color" title="Red" style="background-color: red;"></li>
-                                                            <li class="color" title="Blue" style="background-color: blue;"></li>
-                                                            <li class="color" title="Black" style="background-color: black;"></li>
-                                                            <li class="color" title="Gray" style="background-color: gray;"></li>
-                                                            <li class="color" title="Green" style="background-color: green;"></li>
-                                                        </ul>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="product-details.html" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (4).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="product-details.html">
+                                                        <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (1).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="product-details.html" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (2).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (3).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/8K-Ultra-HD-HDMI-compatible-V2-1-Cable-8K-60-4K-120Hz-Video-for-Xiaomi-Mi.jpg_ (3).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-6 my-3">
+                                                <div class="item small rounded-1 shadow">
+                                                    <a href="#">
+                                                        <img src="assets/images/products/Car-Speed-Gearbox-Gear-Head-Keychain-Manual-Transmission-Lever-Metal-Key-Ring-Car-Refitting-Metal-Pendant.jpg_ (1).webp" alt="Product Image">
+                                                    </a>
+                                                    <div class="content">
+                                                        <div class="price-rating d-flex justify-content-between">
+                                                            <div class="price d-flex align-items-end justify-content-center column-gap-2">
+                                                                <span class="new fw-bold fs-3">$85.00</span>
+                                                                <span class="old fs-5 text-secondary text-decoration-line-through">$90.00</span>
+                                                            </div>
+                                                            <div class="rating">
+                                                                <div class="star down">
+                                                                    <div class="star up" style="width: 90%;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h2 class="title fs-5 mt-3 mb-4 text-center">
+                                                            <a href="#" class="text-body text-hover">Woman Lasn</a>
+                                                        </h2>
+                                                        <div class="actions d-flex justify-content-center align-items-center column-gap-4">
+                                                            <div class="view action bg-white border rounded-circle shadow" title="Quick View">
+                                                                <i class="fa-regular fa-eye"></i>
+                                                            </div>
+                                                            <div class="wishlist action bg-white border rounded-circle shadow" title="Compare">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </div>
+                                                            <div class="cart action bg-white border rounded-circle shadow" title="Add To Cart">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stock-color d-flex justify-content-between align-items-center mt-4">
+                                                            <div class="stocks">
+                                                                <span class="stock in text-success fw-bold">Stock-In</span>
+                                                                <!-- <span class="stock out text-body-tertiary fw-bold">Stock-Out</span> -->
+                                                            </div>
+                                                            <ul class="colors">
+                                                                <li class="color" title="Red" style="background-color: red;"></li>
+                                                                <li class="color" title="Blue" style="background-color: blue;"></li>
+                                                                <li class="color" title="Black" style="background-color: black;"></li>
+                                                                <li class="color" title="Gray" style="background-color: gray;"></li>
+                                                                <li class="color" title="Green" style="background-color: green;"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="product-loader text-center py-4 mt-4">
+                                                    <img src="assets/images/loader.gif" alt="Loader">
                                                 </div>
                                             </div>
                                         </div>
@@ -796,6 +1252,7 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/plugin/price-range.js"></script>
 </body>
 
 </html>
