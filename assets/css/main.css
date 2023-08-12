@@ -1,3 +1,8 @@
+:root {
+    --text-active-color : #ff5353;
+    --text-hover-color : #ff5353;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -25,6 +30,16 @@ a {
 }
 .custom-btn:hover {
     background-color: #213770;
+    color: #fff;
+}
+.custom-btn1 {
+    background-color: #ff5353;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.custom-btn1:hover {
+    background-color: #ff5353;
     color: #fff;
 }
 .btn-rtb {
@@ -63,6 +78,12 @@ a {
 }
 header .dt-none {
     display: none;
+}
+.text-active {
+    color: #ff5353;
+}
+.cursor-pointer {
+    cursor: pointer;
 }
 
 /* ============================ */
