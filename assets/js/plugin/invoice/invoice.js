@@ -1,6 +1,8 @@
+
+// Print
 function printDiv(divName) {
-    var printContents = document.getElementById(divName).innerHTML;
-    var originalContents = document.body.innerHTML;
+    let printContents = document.getElementById(divName).innerHTML;
+    let originalContents = document.body.innerHTML;
 
     document.body.innerHTML = printContents;
 
@@ -9,6 +11,10 @@ function printDiv(divName) {
     document.body.innerHTML = originalContents;
 }
 
+
+
+
+// Pdf Download
 $(function () {
 
     'use strict';

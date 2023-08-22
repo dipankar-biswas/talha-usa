@@ -376,15 +376,27 @@
 
 /* ========================================= */
 /* User Panel */
-.user-panel .user-aside .head {
+.user-aside .head {
     background-color: #213770;
+    position: relative;
 }
-.user-panel .user-aside .head .avatar img {
+.user-aside .head .close-btn {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    padding: 6px;
+    color: #fff;
+}
+.user-aside .head .close-btn:active,
+.user-aside .head .close-btn:hover {
+    color: #ff5353;
+}
+.user-aside .head .avatar img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
-.user-panel .user-aside .items .item .link {
+.user-aside .items .item .link {
     padding: 8px 12px;
     display: flex;
     align-items: center;
@@ -393,14 +405,14 @@
     color: #444;
     transition: all 0.3s ease 0s;
 }
-.user-panel .user-aside .items .item .link .icon {
+.user-aside .items .item .link .icon {
     font-size: 18px;
 }
-.user-panel .user-aside .items .item .link:hover {
+.user-aside .items .item .link:hover {
     background-color: #f2f2f2;
     border-radius: 8px;
 }
-.user-panel .user-aside .items .item .link.active {
+.user-aside .items .item .link.active {
     /* background-color: #213770; */
     background-image: linear-gradient(315deg, #22408b 0%, #493caf 74%);
     color: #fff;
@@ -492,6 +504,8 @@
 }
 
 
+
+
 /* ====================================== */
 /* Responsive */
 @media only screen and (max-width: 991px) {
@@ -504,49 +518,6 @@
     /* Categories / Services */
     .page-wrapper .cat-service .items .item {
         padding: 24px 8px;
-    }
-
-    /* =========*/
-    /* Category Products */
-    /* Aside */
-    .cat-products .left-section {
-        position: fixed;
-        background-color: #fff;
-        width: 0;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        padding: 0 !important;
-        border-radius: 0 !important;
-        z-index: 998;
-        
-        overflow-x: hidden;
-        overflow-y: auto;
-        box-shadow: 0 2px 6px rgba(47, 43, 61,.14),0 0 transparent,0 0 transparent;
-
-        transition: all 0.3s ease 0s;
-        -webkit-transition: all 0.3s ease 0s;
-    }
-    .cat-products .left-section.show {
-        width: 240px;
-        overflow-x: visible;
-        padding: 12px 8px !important;
-    }
-    .cat-products .right-section .heading {
-        display: block !important;
-    }
-    .cat-products .right-section .heading .cat-filter {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 8px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    /* Slider */
-    .page-wrapper .slider .content h2 {
-        font-size: 30px !important;
     }
 
     /* Products */
@@ -608,6 +579,90 @@
         height: 12px;
     }
 
+    /* =========*/
+    /* Category Products */
+    /* Aside */
+    .cat-products .left-section {
+        position: fixed;
+        background-color: #fff;
+        width: 0;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        z-index: 998;
+        
+        overflow-x: hidden;
+        overflow-y: auto;
+        box-shadow: 0 2px 6px rgba(47, 43, 61,.14),0 0 transparent,0 0 transparent;
+
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+    }
+    .cat-products .left-section.show {
+        width: 240px;
+        overflow-x: visible;
+        padding: 12px 8px !important;
+    }
+    .cat-products .right-section .heading {
+        display: block !important;
+    }
+    .cat-products .right-section .heading .cat-filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    /* =========*/
+    /* Products Details */
+    .pdt-details .details .title {
+        margin-top: 20px;
+    }
+    .pdt-details .delivery-options {
+        margin-top: 30px;
+    }
+    .product-details .container > .hr {
+        margin-top: 12px !important;
+    }
+    .product-details .pdt-description {
+        padding-top: 30px;
+    }
+    .pdt-description .same-product {
+        display: none !important;
+    }
+
+    /* User Panel */
+    .user-aside {
+        position: fixed;
+        background-color: #fff;
+        width: 0;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        z-index: 998;
+        
+        overflow-x: hidden;
+        overflow-y: auto;
+        box-shadow: 0 2px 6px rgba(47, 43, 61,.14),0 0 transparent,0 0 transparent;
+
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+    }
+    .user-aside.show {
+        width: 240px;
+        overflow-x: visible;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Slider */
+    .page-wrapper .slider .content h2 {
+        font-size: 30px !important;
+    }
+
     /* Categories / Service */
     .page-wrapper .cat-service .items.grid {
         grid-template-columns: 1fr !important;
@@ -634,6 +689,25 @@
         margin-top: 6px !important;
     }
 
+    /* =========*/
+    /* Products Details */
+    .product-details .pdt-description .pdt-review .left .rating .star {
+        height: 26px;
+    }
+    .product-details .pdt-description .pdt-review .left .rating .star.down {
+        width: 130px;
+    }
+    .product-details .pdt-description .pdt-review .right .progres .bars .bar {
+        height: 10px;
+    }
+
+    /* Auth */
+    .user-auth.login .image,
+    .user-auth.register .image {
+        display: none;
+    }
+
+
     /* Footer */
     footer .widgets {
         grid-template-columns: repeat(2, minmax(120px, 1fr));
@@ -658,8 +732,23 @@
         padding-top: 6px !important;
         padding-bottom: 6px !important;
     }
+
+    /* =========*/
+    /* Invoice */
+    .invoice-name .logo img {
+        width: 200px;
+    }
+    /* =========*/
+    /* Products Details */
+    .product-details .pdt-description .rating-view {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 375px) {
-    
+    /* ====================================== */
+    /* Invoice */
+    .invoice-name .logo img {
+        width: 180px;
+    }
 }
