@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../assets/css/all.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/plugin/price-range.css">
+    <link rel="stylesheet" href="../assets/css/categories.css">
+    <link rel="stylesheet" href="../assets/css/user-panel.css">
 </head>
 
 <body>
@@ -107,8 +108,8 @@
                                     </a>
                                 </div>
                                 <div class="cart">
-                                    <a class="d-flex align-items-center text-light-emphasis fs-4 position-relative"
-                                        href="../cart.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="link d-flex align-items-center text-light-emphasis fs-4 position-relative"
+                                        href="javascript:void(0)">
                                         <i class="fa-solid fa-cart-shopping"></i>
                                         <span
                                             class="position-absolute top-0 start-100 translate-middle px-2 py-0 border border-light rounded-circle fs-6 text-white fw-lighter custom-btn">
@@ -116,8 +117,8 @@
                                         </span>
                                     </a>
 
-                                    <ul class="dropdown-menu px-3 py-3">
-                                        <li class="mb-3">
+                                    <ul class="cart-lists px-3 py-3">
+                                        <li class="list mb-3">
                                             <div class="item">
                                                 <div class="content d-flex column-gap-2">
                                                     <img src="../assets/images/products/16ee943679ec60dca64f376ec3e56989.jpg" alt="Product"/>
@@ -139,7 +140,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="mb-3">
+                                        <li class="list mb-3">
                                             <div class="item">
                                                 <div class="content d-flex column-gap-2">
                                                     <img src="../assets/images/products/1eaea3b9d8871cef85630f71acd6a61f.jpg" alt="Product"/>
@@ -161,7 +162,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="mb-3">
+                                        <li class="list mb-3">
                                             <div class="item">
                                                 <div class="content d-flex column-gap-2">
                                                     <img src="../assets/images/products/2023-New-Sunglasses-Men-s-Driving-Anti-UV-Sunglasses-Concave-Shape-Ladies-Long-Frame-Sunglasses-gafas.jpg_ (1).webp" alt="Product"/>
@@ -533,9 +534,21 @@
                                     </a>
                                     <div class="d-flex align-items-center column-gap-4">
                                         <div class="search dt-none">
-                                            <a href="#" class="text-light-emphasis fs-4">
+                                            <a href="javascript:void(0)" class="text-light-emphasis fs-4 search-btn">
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                             </a>
+                                            <div class="search-slide">
+                                                <form action="../search.html">
+                                                    <div class="input-group input-group-lg">
+                                                        <input type="text" class="form-control search-input" aria-label="Sizing example input"
+                                                            aria-describedby="inputGroup-sizing-lg" placeholder="Product Search...">
+                                                        <div class="input-group-text p-0">
+                                                            <button type="submit" class="btn custom-btn btn-b0 fs-3 w-60"><i
+                                                                    class="fa-solid fa-magnifying-glass"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
                                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -558,19 +571,72 @@
                                                 <a class="nav-link" href="../product-category.html">Kids</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="../product-category.html">Others</a>
+                                                <a class="nav-link" href="product-category.html">Others</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" href="../about.html">About</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">Blog</a>
+                                                <a class="nav-link" href="blog.html">Blog</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" href="../contact.html">Contact</a>
                                             </li>
+                                            <li class="nav-item dt-none ph-lg-block">
+                                                <a class="nav-link" href="../wishlist.html">Wishlist</a>
+                                            </li>
+                                            <li class="nav-item dt-none ph-lg-block">
+                                                <a class="nav-link" href="../compare.html">Compare</a>
+                                            </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="../auth/login.html">Sign In/ Sign Out</a>
+                                                <a class="nav-link" href="../auth/login.html">Sign In</a>
+                                            </li>
+                                            <li class="nav-item user-set ph-lg-none">
+                                                <a class="nav-link" href="javascript:void(0)">Hi! Dipankar</a>
+                                                <div class="user-options">
+                                                    <div class="head">
+                                                        <div class="image">
+                                                            <img src="../assets/images/avatar.webp" alt="Avatar">
+                                                        </div>
+                                                        <div class="content">
+                                                            <div class="name">Dipankar</div>
+                                                            <div class="sub-title">User</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="body">
+                                                        <hr>
+                                                        <a href="dashboard.html" class="link">
+                                                            <div class="icon"><i class="fa-regular fa-user"></i></div>
+                                                            <div class="txt">Profile</div>
+                                                        </a>
+                                                        <a href="#" class="link">
+                                                            <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                                                            <div class="txt">Settings</div>
+                                                        </a>
+                                                        <a href="#" class="link">
+                                                            <div class="icon"><i class="fa-regular fa-credit-card"></i></div>
+                                                            <div class="txt">Billing</div>
+                                                        </a>
+                                                        <hr>
+                                                        <a href="#" class="link">
+                                                            <div class="icon"><i class="fa-regular fa-life-ring"></i></div>
+                                                            <div class="txt">Help</div>
+                                                        </a>
+                                                        <a href="#" class="link">
+                                                            <div class="icon"><i class="fa-solid fa-dollar-sign"></i></div>
+                                                            <div class="txt">Pricing</div>
+                                                        </a>
+                                                        <a href="../faq.html" class="link">
+                                                            <div class="icon"><i class="fa-solid fa-question"></i></div>
+                                                            <div class="txt">FAQ</div>
+                                                        </a>
+                                                        <hr>
+                                                        <a href="#" class="link">
+                                                            <div class="icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+                                                            <div class="txt">Logout</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
@@ -679,23 +745,23 @@
                         <div class="widget">
                             <h3 class="title">Useful links</h3>
                             <ul class="lists">
-                                <li class="list"><a href="#" class="link">Contact us</a></li>
-                                <li class="list"><a href="#" class="link">Common FAQs</a></li>
-                                <li class="list"><a href="#" class="link">Terms & Conditions</a></li>
-                                <li class="list"><a href="#" class="link">Return policy</a></li>
-                                <li class="list"><a href="#" class="link">Cancellation</a></li>
-                                <li class="list"><a href="#" class="link">Track orders</a></li>
+                                <li class="list"><a href="../contact-us.html" class="link">Contact us</a></li>
+                                <li class="list"><a href="../faq.html" class="link">Common FAQs</a></li>
+                                <li class="list"><a href="../terms-conditions.html" class="link">Terms & Conditions</a></li>
+                                <li class="list"><a href="../privacy-policy.html" class="link">Return policy</a></li>
+                                <li class="list"><a href="../cancellation.html" class="link">Cancellation</a></li>
+                                <li class="list"><a href="../track-orders.html" class="link">Track orders</a></li>
                             </ul>
                         </div>
                         <div class="widget">
                             <h3 class="title">Online Shopping</h3>
                             <ul class="lists">
-                                <li class="list"><a href="#" class="link">Men Fashion</a></li>
-                                <li class="list"><a href="#" class="link">Women Fashion</a></li>
-                                <li class="list"><a href="#" class="link">Kids Fashion</a></li>
-                                <li class="list"><a href="#" class="link">Others</a></li>
-                                <li class="list"><a href="#" class="link">Gift cards</a></li>
-                                <li class="list"><a href="#" class="link">Offers</a></li>
+                                <li class="list"><a href="../product-category.html" class="link">Men Fashion</a></li>
+                                <li class="list"><a href="../product-category.html" class="link">Women Fashion</a></li>
+                                <li class="list"><a href="../product-category.html" class="link">Kids Fashion</a></li>
+                                <li class="list"><a href="../product-category.html" class="link">Others</a></li>
+                                <li class="list"><a href="../product-category.html" class="link">Gift cards</a></li>
+                                <li class="list"><a href="../product-category.html" class="link">Offers</a></li>
                             </ul>
                         </div>
                         <div class="widget">

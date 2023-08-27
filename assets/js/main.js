@@ -1,6 +1,26 @@
 // Overlay Div 
 let site_overlay = document.querySelector('.site-overlay');
 
+
+// ================= Site Search ===================
+let search_btn = document.querySelector('header .navigation .search .search-btn');
+let search_div = document.querySelector('header .navigation .search .search-slide');
+if(search_btn && search_div){
+    window.addEventListener('mouseup',function(event){
+        if(search_btn == event.target.closest(".search .search-btn")){
+            search_btn.closest(".search").classList.toggle('active');
+            search_div.classList.toggle('show');
+        }else{
+            if(event.target == search_div || event.target.closest(".search-slide") == search_div){
+                return false;
+            }else if(event.target != search_div && event.target.parentNode != search_div){
+                search_div.classList.remove("show");
+            }
+        }
+    }); 
+}
+
+
 // ================= Product Category ===================
 // Filter Open/Close
 let filter_open_btn = document.querySelector('.category-product .right-section .filter-open');
@@ -17,27 +37,23 @@ if(filter_open_btn && filter_close_btn && filter_section){
         site_overlay.classList.remove('show');
         filter_section.classList.remove('show');
     });
-    // let link_item = document.querySelectorAll("aside nav .navbar-nav li a.link-item");
-    // for(let i = 0; i < link_item.length; i++){
-    //     link_item[i].addEventListener('click',function(){
-    //         aside.classList.remove('show');
-    //         site_overlay.classList.remove('show');
-    //     });
-    // }
 }
 
 
 
-// ================= Product Details ===================
-let share_btn = document.querySelector('.pdt-details .details .shares .social-share .share-btn');
-let share_div = document.querySelector('.pdt-details .details .shares .social-share .share');
-if(share_btn && share_div){
-    share_btn.addEventListener('click',function(){
-        share_div.classList.toggle('show');
-    });
+// ================= Product Details Social Media Share ===================
+let product_share_btn = document.querySelector('.pdt-details .details .shares .social-share .share-btn');
+let product_share_div = document.querySelector('.pdt-details .details .shares .social-share .share');
+if(product_share_btn && product_share_div){
     window.addEventListener('mouseup',function(event){
-        if(event.target != share_div && event.target.parentNode != share_div){
-            share_div.classList.remove('show');
+        if(product_share_btn == event.target.closest(".social-share .share-btn")){
+            product_share_div.classList.toggle('show');
+        }else{
+            if(event.target == product_share_div || event.target.closest(".share.social") == product_share_div){
+                return false;
+            }else if(event.target != product_share_div && event.target.parentNode != product_share_div){
+                product_share_div.classList.remove("show");
+            }
         }
     }); 
 }
@@ -60,7 +76,7 @@ if(user_panel_open_btn && user_panel_close_btn && user_panel_aside){
     });
 }
 
-// ================= Categories Slide ===================
+// ================= Mobile Tools Categories Slide ===================
 let categories_slide_open_btn = document.querySelector('.mobile-tools .categories-slide-open-btn');
 let categories_slide_close_btn = document.querySelector('.heading .categories-slide-close-btn');
 let categories_aside = document.querySelector('header .navigation .categories');
@@ -114,6 +130,46 @@ function siteOverlay(){
 
 
 
+// ================= Cart List Short ===================
+let cart_view_btn = document.querySelector('header .logo-bar .cart .link');
+let cart_view_div = document.querySelector('header .logo-bar .cart .cart-lists');
+if(cart_view_btn && cart_view_div){
+    window.addEventListener('mouseup',function(event){
+        if(cart_view_btn == event.target.closest(".cart .link")){
+            cart_view_div.classList.toggle('show');
+        }else{
+            if(event.target == cart_view_div || event.target.closest(".cart-lists") == cart_view_div){
+                console.log(event.target);
+                return false;
+            }else if(event.target != cart_view_div && event.target.parentNode != cart_view_div){
+                cart_view_div.classList.remove("show");
+            }
+        }
+    }); 
+}
+
+// ================= User Options/Setting ===================
+let user_option_btn = document.querySelector('header .navigation nav .navbar-nav .nav-item.user-set .nav-link');
+let user_option_div = document.querySelector('header .navigation nav .navbar-nav .nav-item.user-set .user-options');
+let user_option_div_head = document.querySelector('header .navigation nav .navbar-nav .nav-item.user-set .user-options .head');
+if(user_option_btn && user_option_div){
+    window.addEventListener('mouseup',function(event){
+        if(user_option_btn == event.target){
+            user_option_div.classList.toggle('show');
+        }else{
+            if(event.target == user_option_div_head || event.target.closest(".head") == user_option_div_head){
+                return false;
+            }else if(event.target != user_option_div && event.target.parentNode != user_option_div){
+                user_option_div.classList.remove("show");
+            }
+        }
+    }); 
+}
+
+
+
+
+
 
 
 
@@ -137,78 +193,3 @@ function siteOverlay(){
 // }
 
 
-// let menu_item = document.querySelectorAll(".categories .menus .item .text .arrow");
-let menu_item = document.querySelectorAll(".categories .menus .item .text .link");
-let mega_menu_title = document.querySelectorAll(".categories .menus .item.tree .mega-menu .list-section .title");
-for (let i = 0; i < menu_item.length; i++) {
-    menu_item[i].addEventListener("click", function () {
-        // All active item link remove
-        // let menu_item_link = document.querySelectorAll(".categories .menus .item .text .arrow");
-        let menu_item_link = document.querySelectorAll(".categories .menus .item .text .link");
-        for (let l = 0; l < menu_item_link.length; l++) {
-            menu_item_link[l].classList.remove("active");
-        }
-
-        // This item link active
-        // this.closest('.text').classList.add("active");
-        this.classList.add("active");
-
-        // All mega menu(sub menu) height remove
-        let mega_menu = document.querySelectorAll(".categories .menus .item.tree .mega-menu");
-        for (let k = 0; k < mega_menu.length; k++) {
-            mega_menu[k].style.maxHeight = null;
-        }
-
-
-        // Mega menu(sub menu) height active
-        let list_section = this.closest(".item").querySelector(".mega-menu");
-        if(list_section){
-            list_section.classList.add("show");
-            list_section.style.maxHeight = list_section.scrollHeight + "px";
-        }
-        
-
-
-        // ================
-        // (Main Megu Click) All sub menu item active remove
-         let sub_sub_item = document.querySelectorAll(".categories .menus .item.tree .mega-menu .list-section .title");
-        for (let p = 0; p < sub_sub_item.length; p++) {
-            sub_sub_item[p].classList.remove("active");
-        }
-
-        // All sub sub menu height remove
-        let sub_sub_lists = document.querySelectorAll(".categories .menus .item.tree .mega-menu .list-section .sub-lists");
-        for (let q = 0; q < sub_sub_lists.length; q++) {
-            sub_sub_lists[q].style.maxHeight = null;
-        }
-    });
-} 
-
-// SubMenu
-for (let j = 0; j < mega_menu_title.length; j++) {
-    mega_menu_title[j].addEventListener("click", function () {
-        // All sub sub menu item active remove
-        let item_active_remove = document.querySelectorAll(".categories .menus .item.tree .mega-menu .list-section .title");
-        for (let p = 0; p < item_active_remove.length; p++) {
-            item_active_remove[p].classList.remove("active");
-        }
-
-        // This sub sub menu item active
-        this.classList.add("active");
-
-        // // All sub sub menu height remove
-        let sub_menu_height = document.querySelectorAll(".categories .menus .item.tree .mega-menu .list-section .sub-lists");
-        console.log(sub_menu_height.length);
-        for (let q = 0; q < sub_menu_height.length; q++) {
-            sub_menu_height[q].style.maxHeight = null;
-        }
-
-        // Sub Sub menu height active
-        let sub_lists = this.closest(".list-section").querySelector(".sub-lists");
-        sub_lists.style.maxHeight = sub_lists.scrollHeight + "px";
-
-        // Mega menu(sub menu) + sub sub menu height adding
-        let list_section_add = this.closest(".item.tree").querySelector(".mega-menu");
-        list_section_add.style.maxHeight = sub_lists.scrollHeight + list_section_add.scrollHeight + "px";
-    });
-}
