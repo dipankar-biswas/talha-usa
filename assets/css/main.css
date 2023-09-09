@@ -714,6 +714,7 @@ class-name::before {
     }
     .top-navbar ul {
         font-size: 12px;
+        height: auto !important;
     }
     /* Header */
     header .navigation .navbar .navbar-brand {

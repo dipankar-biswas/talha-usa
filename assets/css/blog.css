@@ -4,6 +4,7 @@
     box-shadow: 0 4px 24px 0 rgba(0,0,0,.15);
     border-radius: 8px;
     overflow: hidden;
+    display: grid;
 }
 .blogs .blog > .thumb {
     overflow: hidden;
@@ -252,6 +253,9 @@
 
 .blogs .details{
     font-size: 16px;
+}
+.blogs .details .feature-image {
+    display: grid;
 }
 .blogs .details .feature-image img {
     max-width: 100%;

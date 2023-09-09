@@ -63,13 +63,15 @@ if(product_share_btn && product_share_div){
 let user_panel_open_btn = document.querySelector('.mobile-tools .user-panel-open-btn');
 let user_panel_close_btn = document.querySelector('.head .user-panel-close-btn');
 let user_panel_aside = document.querySelector('.user-panel .user-aside');
-if(user_panel_open_btn && user_panel_close_btn && user_panel_aside){
+if(user_panel_open_btn && user_panel_aside){
     user_panel_open_btn.addEventListener('click',function(){
         mobileIconText(this);
         siteOverlay();
         site_overlay.classList.add('show');
         user_panel_aside.classList.add('show');
     });
+}
+if(user_panel_close_btn && user_panel_aside){
     user_panel_close_btn.addEventListener('click',function(){
         site_overlay.classList.remove('show');
         user_panel_aside.classList.remove('show');
